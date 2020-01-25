@@ -5,7 +5,7 @@ import pandas as pd
 import tqdm
 
 
-SUBMISSIONS = ['ar']
+SUBMISSIONS = ['ar', 'cr']
 
 SAT_VAR_MODELS = collections.defaultdict(lambda: collections.defaultdict(lambda: 'ar'))
 
