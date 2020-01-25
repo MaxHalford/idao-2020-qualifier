@@ -7,12 +7,17 @@ You first want to unzip the data folder into `data/`. You should thus have `data
 We built several simple models which are each contained in a Jupyter notebook. You can either open them and execute them manually, or programmatically by using `nbconvert`.
 
 ```sh
-jupyter nbconvert --execute auto-regression.ipynb --to notebook --inplace --ExecutePreprocessor.timeout=-1 --debug
+jupyter nbconvert \
+    --execute auto-regression.ipynb \
+    --to notebook \
+    --inplace \
+    --ExecutePreprocessor.timeout=-1 \
+    --debug
 ```
 
 Each notebook will produces validation scores as well as submission files, both of which are stored in the `results` directory. For instance, `auto-regression.ipynb` will output `results/ar_track_1.csv` (which is the submission file) and `results/ar_val_scores.csv` (which are the validation scores).
 
-We can now blend each submission. This will produce a submission file named `track_1_blended.csv` in the `results` directory.
+We can now blend the submissions. This will produce a submission file named `track_1_blended.csv` in the `results` directory.
 
 ```sh
 python results/blend_track_1.py
