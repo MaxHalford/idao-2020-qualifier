@@ -75,7 +75,7 @@ class ARModel:
 
 if __name__ == '__main__':
 
-    models = joblib.load('models.pkl')
+    models = joblib.load('ar_models.pkl')
 
     test = pd.read_csv(
         'test.csv',
