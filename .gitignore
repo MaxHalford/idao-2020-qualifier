@@ -1,4 +1,6 @@
-*.png
 .ipynb_checkpoints/
 *.csv
 *.zip
+*.dat
+data/**/*
+*.pkl
