@@ -21,7 +21,7 @@ if __name__ == '__main__':
     model = SUBMISSIONS[0]
     val_scores = pd.read_csv(os.path.join(here, f'{model}_val_scores.csv'), names=["sat_id", "variable", f"smape_{model}"], header=0)
     for model in SUBMISSIONS[1:]:
-        val_scores = val_scores.merge(pd.read_csv(os.path.join(here, f'{model}_val_scores.csv'), names=["sat_id", "variable", f"smape_{model}"], header=0), on=["sat_id", "variable"])
+        val_scores = val_scores.merge(pd.read_csv(os.path.join(here, f'{model}_val_scores.csv'), names=["sat_id", "variable", f"smape_{model}"], header=0), on=["sat_id", "variable"], how='left')
     
     val_scores["best_model"] = val_scores[[f"smape_{m}" for m in SUBMISSIONS]].idxmin(axis=1).apply(lambda s: s.replace('smape_', ''))
 
