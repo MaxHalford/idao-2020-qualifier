@@ -43,7 +43,7 @@ zip -jr results/track_2.zip track_2
 
 ## Track 2 performance profiling
 
-We used the `memory_profiler` package for measuring the memory consumption of our script for track 2.
+The goal of track 2 was to implement a model which could make predictions on the test set in less than 60 seconds with under 500 MB of RAM. We used the [`memory_profiler`](https://github.com/pythonprofilers/memory_profiler) package for measuring the memory consumption of our script for track 2.
 
 ```sh
 cd track_2
@@ -54,4 +54,4 @@ mprof plot --output ../results/track_2_memory_usage.png
 
 ![track_2_memory_usage](results/track_2_memory_usage.png)
 
-As for speed, we used a rule of thumb, which is that the Yandex machine used for running our code is 20 seconds slower than our machine. We thus checked that our code took at most 40 seconds to run on our machine. For reference, our CPU model is `Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz` and we have 4 physical cores.
+As for speed, we used a rule of thumb, which is that the Yandex machine used for running our code is 20 seconds slower than our machine. We thus checked that our code took at most 40 seconds to run on our machine. For reference, our CPU model is `Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz`.
