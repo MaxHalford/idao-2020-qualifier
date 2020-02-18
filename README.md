@@ -13,6 +13,13 @@ jupyter nbconvert \
     --inplace \
     --ExecutePreprocessor.timeout=-1 \
     --debug
+    
+jupyter nbconvert \
+    --execute cycle_regression.ipynb \
+    --to notebook \
+    --inplace \
+    --ExecutePreprocessor.timeout=-1 \
+    --debug
 ```
 
 Each notebook will produces validation scores as well as submission files, both of which are stored in the `results` directory. For instance, `auto-regression.ipynb` will output `results/ar_track_1.csv` (which is the submission file) and `results/ar_val_scores.csv` (which are the validation scores).
