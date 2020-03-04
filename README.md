@@ -6,7 +6,7 @@ Overall we ranked 2nd on track 1, 1st on track 2, and 1st overall. We used the s
 
 ## Usage
 
-You first want to unzip the data folder into `data/`. You should thus have `data/train.csv`, `data/Track 1`, and `data/Track 2` on your path.
+You first want to download the competition data from [here](https://yadi.sk/d/0zYx00gSraxZ3w). Then, unzip the data folder into `data/`. You should thus have `data/train.csv`, `data/Track 1`, and `data/Track 2` on your path.
 
 We built several simple models which are each contained in a Jupyter notebook. You can either open them and execute them manually, or programmatically by using `nbconvert`.
 
