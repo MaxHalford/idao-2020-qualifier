@@ -49,7 +49,7 @@ The goal of track 2 was to implement a model which could make predictions on the
 cd track_2
 pip install memory_profiler
 mprof run python main.py
-mprof plot --output ../results/track_2_memory_usage.png
+mprof plot --output ./results/track_2_memory_usage.png
 ```
 
 ![track_2_memory_usage](results/track_2_memory_usage.png)
