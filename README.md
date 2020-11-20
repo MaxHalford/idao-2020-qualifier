@@ -1,6 +1,6 @@
 # IDAO 2020 qualification phase
 
-This repository contains my team's solution to the [2020 edition](https://idao.world/results/) of the [International Data Analysis Olympiad (IDAO)](https://idao.world/). Our team is called Data O Plomo.
+This repository contains my team's solution to the [2020 edition](https://idao.world/results/) of the [International Data Analysis Olympiad (IDAO)](https://idao.world/). Our team is called Data O Plomo. [Here](https://official.contest.yandex.ru/contest/16669/problems/)'s some more information on the contest.
 
 Overall we ranked 2nd on track 1, 1st on track 2, and 1st overall. We used the same model for both tracks. Our model is very simple, and is basically an [autoregressive](https://www.wikiwand.com/en/Autoregressive_model) linear regression with a few bells and whistles. You may find more information in [these slides](https://maxhalford.github.io/slides/idao-2020-qualifiers.pdf) which we presented during an online webinar to other contestants.
 
